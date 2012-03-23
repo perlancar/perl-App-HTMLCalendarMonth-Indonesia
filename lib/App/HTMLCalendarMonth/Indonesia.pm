@@ -125,7 +125,6 @@ sub gen_id_mon_calendar {
 
 1;
 #ABSTRACT: Generate Indonesian monthly HTML calendar
-__END__
 
 =head1 SYNOPSIS
 

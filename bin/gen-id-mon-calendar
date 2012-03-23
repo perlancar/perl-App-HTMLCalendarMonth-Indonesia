@@ -9,18 +9,18 @@ use 5.010;
 use strict;
 use warnings;
 
-use Sub::Spec::CmdLine qw(run);
+use Perinci::CmdLine;
 
-run(module => 'App::HTMLCalendarMonth::Indonesia', sub=>'gen_id_mon_calendar');
+Perinci::CmdLine->new(
+    url => '/App/HTMLCalendarMonth/Indonesia/gen_id_mon_calendar')->run;
 
 1;
 # ABSTRACT: Generate Indonesian monthly calendar
-__END__
 
 =head1 SYNOPSIS
 
  $ ( echo '<style>td.holiday, td.sunday {color: red}</style>';
-     gen-id-mon-calendar --year 2011 --month 10 ) > 2010-10.html
+     gen-id-mon-calendar --year 2011 --month 10 ) > 2011-10.html
 
 
 =head1 DESCRIPTION
