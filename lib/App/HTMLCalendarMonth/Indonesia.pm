@@ -7,7 +7,7 @@ use warnings;
 use DateTime;
 use HTML::CalendarMonth;
 use Calendar::Indonesia::Holiday qw(list_id_holidays);
-use Perinci::Sub::Util qw(wrapres);
+use Perinci::Sub::Util qw(err);
 
 use Exporter::Lite;
 our @EXPORT_OK = qw(gen_id_mon_calendar);
@@ -96,7 +96,7 @@ sub gen_id_mon_calendar {
     if (!$holidays) {
         my $res = list_id_holidays(year=>$year, month=>$month,
                                    is_joint_leave=>0);
-        return wrapres([500, "Can't get list of holidays: "], $res)
+        return err(500, "Can't get list of holidays", $res)
             unless $res->[0] == 200;
         $holidays = $res->[2];
     }
