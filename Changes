@@ -2,19 +2,20 @@ Revision history for App-HTMLCalendarMonth-Indonesia
 
 0.04    2012-03-23 (SHARYANTO)
 
-        No functional changes. Replace Sub::Spec::CmdLine with Perinci::CmdLine.
+        - No functional changes. Replace Sub::Spec::CmdLine with
+          Perinci::CmdLine.
 
 
 0.03    2011-10-25 (SHARYANTO)
 
-        No functional changes. Add missing dep [ct].
+        - No functional changes. Add missing dep [CT].
 
 
 0.02    2011-10-05 (SHARYANTO)
 
-        No functional changes. Build fix (forgot weaver.ini).
+        - No functional changes. Build fix (forgot weaver.ini).
 
 
 0.01    2011-10-05 (SHARYANTO)
 
-        First release.
+        - First release.
