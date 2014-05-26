@@ -3,6 +3,7 @@ package App::HTMLCalendarMonth::Indonesia;
 use 5.010001;
 use strict;
 use warnings;
+use experimental 'smartmatch';
 
 use DateTime;
 use HTML::CalendarMonth;
